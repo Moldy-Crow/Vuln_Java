@@ -95,6 +95,12 @@ kubectl exec vault-0 -n vault -- /bin/sh -c 'vault policy write secret-challenge
 path "secret/data/secret-challenge" {
   capabilities = ["read"]
 }
+path "secret/metadata/secret-challenge" {
+  capabilities = ["read"]
+}
+path "secret/metadata/application" {
+  capabilities = ["read"]
+}
 path "secret/data/application" {
   capabilities = ["read"]
 }
@@ -108,6 +114,7 @@ kubectl exec vault-0 -n vault -- vault write auth/kubernetes/role/secret-challen
         ttl=24h \
  && vault kv put secret/secret-challenge vaultpassword.password="$(openssl rand -base64 16)" \
  && vault kv put secret/application vaultpassword.password="$(openssl rand -base64 16)" \
+ && vault kv metadata put -mount=secret application -custom-metadata="$(openssl rand -base64 16)" \
 
 kubectl create serviceaccount vault
 echo "Deploy secret challenge app"
