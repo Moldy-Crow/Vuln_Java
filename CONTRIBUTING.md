@@ -144,7 +144,7 @@ Please be sure to take a careful look at our [Code of Conduct](https://github.co
 
 ## How to get started with the project in IntelliJ IDEA
 
-- 
+-
 
 ### Step 1: Fork the Project.
 
@@ -153,7 +153,7 @@ A forked copy of that Git repository will be added to your personal GitHub.
 
 ![](images/fork-project-1.png)
 
-- 
+-
 
 ### Step 2: Clone the Project.
 
@@ -162,7 +162,7 @@ To **_clone_** the Project to your local desktop by clicking on the button as sh
 
 ![](images/clone-project-2.png)
 
-- 
+-
 
 ### Step 3: Open the Project using IntelliJ IDEA
 
@@ -174,7 +174,7 @@ To **_clone_** the Project to your local desktop by clicking on the button as sh
 
   ![](images/wait-3.2.png)
 
-- 
+-
 
 ### Step 4: Setup.
 
@@ -210,7 +210,7 @@ To **_clone_** the Project to your local desktop by clicking on the button as sh
 
 **NOTE:** Indians and other Asia-Pacific countries users may have to use **VPN** if you enounter this exception `org.owasp.dependencycheck.utils.DownloadFailedException: TLS Connection Reset`.
 
-- 
+-
 
 ### Step 6: Running the Project.
 
@@ -218,7 +218,7 @@ To **_clone_** the Project to your local desktop by clicking on the button as sh
   ![](images/open-application-6.1.png)
 - Press **_Shift+F10_** to run the application, this will open up the **_Run/Debug Configurations Menu._**
   ![](images/run-application-6.2.png)
-- 
+-
 
 ### Step 7: Setting up Configurations.
 
@@ -242,7 +242,7 @@ To **_clone_** the Project to your local desktop by clicking on the button as sh
 
   ![](images/run-application-6.2.png)
 
-- 
+-
 
 ### There you have it, **_WrongSecrets_** running successfully.
 
@@ -258,13 +258,13 @@ To **_clone_** the Project to your local desktop by clicking on the button as sh
 
 ## How to add a challenge
 
-- 
+-
 
 ### Step 1: Creating a new issue.
 
 First make sure that you have an [Issue](https://github.com/OWASP/wrongsecrets/issues/new) reported for which a challenge is really wanted, And make sure the challenge is assigned to you, as others might be working on the challenge.
 
-- 
+-
 
 ### Step 2: Adding the challenge.
 
@@ -346,7 +346,7 @@ return false;
 }
 ```
 
-- 
+-
 
 ### Step 3: Adding Test File.
 
@@ -379,7 +379,7 @@ These are the things that you have to keep in mind.
 
 Please note that PRs for new challenges are only accepted when unit tests are added to prove that the challenge works. Normally tests should not immediately leak the actual secret, so leverage the `.spoil()` functionality of your test implementation for this.
 
-- 
+-
 
 ### Step 4: Adding explanations, reasons and hints.
 
@@ -416,11 +416,10 @@ Things to be noted.
 
       This challenge is only meant for helping new contributors to add new challenges. Please, have fun with trying more difficult challenges;-).
   ```
-- 
+-
 
 ### Step 5: Submitting your PR.
 
 After completing all the above steps, final step is to submit the PR and refer [**Contributing.md**](https://github.com/OWASP/wrongsecrets/blob/master/CONTRIBUTING.md#how-to-get-your-pr-accepted) on how to get your PR accepted.
 
 ---
-

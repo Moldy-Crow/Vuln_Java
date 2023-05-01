@@ -37,4 +37,3 @@ Optionally, provide any helpful references that may help the reviewer(s).
 - [ ] I tested the changes in this PR (if applicable)
 - [ ] I added unit tests to ensure my change works (when change in Java or on front-end code)
 - [ ] The PR passes pre-commit hooks and automated tests
-
