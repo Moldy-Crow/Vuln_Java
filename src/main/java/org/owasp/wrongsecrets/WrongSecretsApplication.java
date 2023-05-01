@@ -12,13 +12,13 @@ import org.springframework.context.annotation.ScopedProxyMode;
 @EnableConfigurationProperties(Vaultpassword.class)
 public class WrongSecretsApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(WrongSecretsApplication.class, args);
-    }
+  public static void main(String[] args) {
+    SpringApplication.run(WrongSecretsApplication.class, args);
+  }
 
-    @Bean
-    @Scope(value = "session", proxyMode = ScopedProxyMode.TARGET_CLASS)
-    public InMemoryScoreCard scoreCard() {
-        return new InMemoryScoreCard(28);
-    }
+  @Bean
+  @Scope(value = "session", proxyMode = ScopedProxyMode.TARGET_CLASS)
+  public InMemoryScoreCard scoreCard() {
+    return new InMemoryScoreCard(28);
+  }
 }

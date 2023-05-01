@@ -66,3 +66,4 @@ If you take the 3 domain setup, make sure the following values are configured in
 - `default_aws_value_challenge_9` set to the value of the secret generated for challenge 9. Don't be fooled by the name, as this will work for AWS/GCP/Azure.
 - `default_aws_value_challenge_10` set to the value of the secret generated for challenge 10. Don't be fooled by the name, as this will work for AWS/GCP/Azure.
 - `default_aws_value_challenge_11` (Optionally, when you have separated cloud accounts or took care of permissiosn boundaries) set to the value of the secret generated for challenge 11. Don't be fooled by the name, as this will work for AWS/GCP/Azure.
+

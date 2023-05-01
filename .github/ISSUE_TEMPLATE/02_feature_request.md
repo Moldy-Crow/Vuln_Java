@@ -1,7 +1,8 @@
 ---
+
 name: 🚀 Feature request
 about: If you have a feature request 💡
----
+---------------------------------------
 
 ### Context
 

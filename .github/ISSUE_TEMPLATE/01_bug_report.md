@@ -1,8 +1,9 @@
 ---
+
 name: 🐜 Bug report
 about: If something isn't working 🔧
 labels: bug
----
+-----------
 
 <!-- Note: not all sections may be necessary. Strip out what you don't need. -->
 
@@ -10,8 +11,8 @@ labels: bug
 
 At least:
 
--   Operating System + version (and distro if linux):
--   Software versions (Java, Terraform, etc)
+- Operating System + version (and distro if linux):
+- Software versions (Java, Terraform, etc)
 
 ### What is the expected behavior?
 

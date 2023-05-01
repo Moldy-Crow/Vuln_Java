@@ -1,14 +1,15 @@
 ---
+
 name: 🧩 Challenge idea
 about: If you have a challenge idea 💡
 labels: "New Challenge"
----
+-----------------------
 
 ### Context
 
--   What should the challenge scenario be like?
--   What should the participant learn from completing the challenge?
--   For what category would the challenge be? (e.g. Docker, K8s, binary)
+- What should the challenge scenario be like?
+- What should the participant learn from completing the challenge?
+- For what category would the challenge be? (e.g. Docker, K8s, binary)
 
 ### Did you encounter this in real life? Could you tell us more about the scenario?
 

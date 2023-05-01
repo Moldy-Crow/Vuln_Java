@@ -23,36 +23,36 @@ Want to play the other challenges? Read the instructions on how to set them up b
 
 ## Table of contents
 
--   [Support](#support)
--   [Basic docker exercises](#basic-docker-exercises)
-    -   [Running these on Heroku](#running-these-on-heroku)
-    -   [Running on Fly.io](#running-on-flyio)
--   [Basic K8s exercise](#basic-k8s-exercise)
-    -   [Minikube based](#minikube-based)
-    -   [k8s based](#k8s-based)
-    -   [Okteto based](#okteto-based)
-    -   [Vault exercises with minikube](#vault-exercises-with-minikube)
--   [Cloud Challenges](#cloud-challenges)
-    -   [Running WrongSecrets in AWS](#running-wrongsecrets-in-aws)
-    -   [Running WrongSecrets in GCP](#running-wrongsecrets-in-gcp)
-    -   [Running WrongSecrets in Azure](#running-wrongsecrets-in-azure)
-    -   [Running Challenge15 in your own cloud only](#running-challenge15-in-your-own-cloud-only)
--   [Do you want to play without guidance?](#do-you-want-to-play-without-guidance)
--   [Special thanks & Contributors](#special-thanks--contributors)
--   [Sponsorships](#sponsorships)
--   [Help Wanted](#help-wanted)
--   [Use OWASP WrongSecrets as a secret detection benchmark](#use-owasp-wrongsecrets-as-a-secret-detection-benchmark)
--   [CTF](#ctf)
-    -   [CTFD Support](#ctfd-support)
-    -   [FBCTF Support](#fbctf-support--experimental--)
--   [Notes on development](#notes-on-development)
-    -   [Dependency management](#dependency-management)
-    -   [Get the project started in IntelliJ IDEA](#get-the-project-started-in-intellij-idea)
-    -   [Automatic reload during development](#automatic-reload-during-development)
-    -   [How to add a Challenge](#how-to-add-a-challenge)
-    -   [Local testing](#local-testing)
--   [Want to play, but are not allowed to install the tools?](#want-to-play-but-are-not-allowed-to-install-the-tools)
--   [Further reading on secrets management](#further-reading-on-secrets-management)
+- [Support](#support)
+- [Basic docker exercises](#basic-docker-exercises)
+  - [Running these on Heroku](#running-these-on-heroku)
+  - [Running on Fly.io](#running-on-flyio)
+- [Basic K8s exercise](#basic-k8s-exercise)
+  - [Minikube based](#minikube-based)
+  - [k8s based](#k8s-based)
+  - [Okteto based](#okteto-based)
+  - [Vault exercises with minikube](#vault-exercises-with-minikube)
+- [Cloud Challenges](#cloud-challenges)
+  - [Running WrongSecrets in AWS](#running-wrongsecrets-in-aws)
+  - [Running WrongSecrets in GCP](#running-wrongsecrets-in-gcp)
+  - [Running WrongSecrets in Azure](#running-wrongsecrets-in-azure)
+  - [Running Challenge15 in your own cloud only](#running-challenge15-in-your-own-cloud-only)
+- [Do you want to play without guidance?](#do-you-want-to-play-without-guidance)
+- [Special thanks & Contributors](#special-thanks--contributors)
+- [Sponsorships](#sponsorships)
+- [Help Wanted](#help-wanted)
+- [Use OWASP WrongSecrets as a secret detection benchmark](#use-owasp-wrongsecrets-as-a-secret-detection-benchmark)
+- [CTF](#ctf)
+  - [CTFD Support](#ctfd-support)
+  - [FBCTF Support](#fbctf-support--experimental--)
+- [Notes on development](#notes-on-development)
+  - [Dependency management](#dependency-management)
+  - [Get the project started in IntelliJ IDEA](#get-the-project-started-in-intellij-idea)
+  - [Automatic reload during development](#automatic-reload-during-development)
+  - [How to add a Challenge](#how-to-add-a-challenge)
+  - [Local testing](#local-testing)
+- [Want to play, but are not allowed to install the tools?](#want-to-play-but-are-not-allowed-to-install-the-tools)
+- [Further reading on secrets management](#further-reading-on-secrets-management)
 
 ## Support
 
@@ -71,8 +71,8 @@ _Can be used for challenges 1-4, 8, 12-29_
 
 For the basic docker exercises you currently require:
 
--   Docker [Install from here](https://docs.docker.com/get-docker/)
--   Some Browser that can render HTML
+- Docker [Install from here](https://docs.docker.com/get-docker/)
+- Some Browser that can render HTML
 
 You can install it by doing:
 
@@ -82,29 +82,29 @@ docker run -p 8080:8080 jeroenwillemsen/wrongsecrets:latest-no-vault
 
 Now you can try to find the secrets by means of solving the challenge offered at:
 
--   [localhost:8080/challenge/1](http://localhost:8080/challenge/1)
--   [localhost:8080/challenge/2](http://localhost:8080/challenge/2)
--   [localhost:8080/challenge/3](http://localhost:8080/challenge/3)
--   [localhost:8080/challenge/4](http://localhost:8080/challenge/4)
--   [localhost:8080/challenge/8](http://localhost:8080/challenge/8)
--   [localhost:8080/challenge/12](http://localhost:8080/challenge/12)
--   [localhost:8080/challenge/13](http://localhost:8080/challenge/13)
--   [localhost:8080/challenge/14](http://localhost:8080/challenge/14)
--   [localhost:8080/challenge/15](http://localhost:8080/challenge/15)
--   [localhost:8080/challenge/16](http://localhost:8080/challenge/16)
--   [localhost:8080/challenge/17](http://localhost:8080/challenge/17)
--   [localhost:8080/challenge/18](http://localhost:8080/challenge/18)
--   [localhost:8080/challenge/19](http://localhost:8080/challenge/19)
--   [localhost:8080/challenge/20](http://localhost:8080/challenge/20)
--   [localhost:8080/challenge/21](http://localhost:8080/challenge/21)
--   [localhost:8080/challenge/22](http://localhost:8080/challenge/22)
--   [localhost:8080/challenge/23](http://localhost:8080/challenge/23)
--   [localhost:8080/challenge/24](http://localhost:8080/challenge/24)
--   [localhost:8080/challenge/25](http://localhost:8080/challenge/25)
--   [localhost:8080/challenge/26](http://localhost:8080/challenge/26)
--   [localhost:8080/challenge/27](http://localhost:8080/challenge/27)
--   [localhost:8080/challenge/28](http://localhost:8080/challenge/28)
--   [localhost:8080/challenge/29](http://localhost:8080/challenge/29)
+- [localhost:8080/challenge/1](http://localhost:8080/challenge/1)
+- [localhost:8080/challenge/2](http://localhost:8080/challenge/2)
+- [localhost:8080/challenge/3](http://localhost:8080/challenge/3)
+- [localhost:8080/challenge/4](http://localhost:8080/challenge/4)
+- [localhost:8080/challenge/8](http://localhost:8080/challenge/8)
+- [localhost:8080/challenge/12](http://localhost:8080/challenge/12)
+- [localhost:8080/challenge/13](http://localhost:8080/challenge/13)
+- [localhost:8080/challenge/14](http://localhost:8080/challenge/14)
+- [localhost:8080/challenge/15](http://localhost:8080/challenge/15)
+- [localhost:8080/challenge/16](http://localhost:8080/challenge/16)
+- [localhost:8080/challenge/17](http://localhost:8080/challenge/17)
+- [localhost:8080/challenge/18](http://localhost:8080/challenge/18)
+- [localhost:8080/challenge/19](http://localhost:8080/challenge/19)
+- [localhost:8080/challenge/20](http://localhost:8080/challenge/20)
+- [localhost:8080/challenge/21](http://localhost:8080/challenge/21)
+- [localhost:8080/challenge/22](http://localhost:8080/challenge/22)
+- [localhost:8080/challenge/23](http://localhost:8080/challenge/23)
+- [localhost:8080/challenge/24](http://localhost:8080/challenge/24)
+- [localhost:8080/challenge/25](http://localhost:8080/challenge/25)
+- [localhost:8080/challenge/26](http://localhost:8080/challenge/26)
+- [localhost:8080/challenge/27](http://localhost:8080/challenge/27)
+- [localhost:8080/challenge/28](http://localhost:8080/challenge/28)
+- [localhost:8080/challenge/29](http://localhost:8080/challenge/29)
 
 Note that these challenges are still very basic, and so are their explanations. Feel free to file a PR to make them look
 better ;-).
@@ -127,44 +127,44 @@ _Can be used for challenges 1-6, 8, 12-29_
 
 Make sure you have the following installed:
 
--   Docker [Install from here](https://docs.docker.com/get-docker/)
--   Minikube [Install from here](https://minikube.sigs.k8s.io/docs/start/)
+- Docker [Install from here](https://docs.docker.com/get-docker/)
+- Minikube [Install from here](https://minikube.sigs.k8s.io/docs/start/)
 
 The K8S setup currently is based on using Minikube for local fun:
 
 ```bash
-    minikube start
-    kubectl apply -f k8s/secrets-config.yml
-    kubectl apply -f k8s/secrets-secret.yml
-    kubectl apply -f k8s/secret-challenge-deployment.yml
-    while [[ $(kubectl get pods -l app=secret-challenge -o 'jsonpath={..status.conditions[?(@.type=="Ready")].status}') != "True" ]]; do echo "waiting for secret-challenge" && sleep 2; done
-    kubectl expose deployment secret-challenge --type=LoadBalancer --port=8080
-    minikube service secret-challenge
+minikube start
+kubectl apply -f k8s/secrets-config.yml
+kubectl apply -f k8s/secrets-secret.yml
+kubectl apply -f k8s/secret-challenge-deployment.yml
+while [[ $(kubectl get pods -l app=secret-challenge -o 'jsonpath={..status.conditions[?(@.type=="Ready")].status}') != "True" ]]; do echo "waiting for secret-challenge" && sleep 2; done
+kubectl expose deployment secret-challenge --type=LoadBalancer --port=8080
+minikube service secret-challenge
 ```
 
 now you can use the provided IP address and port to further play with the K8s variant (instead of localhost).
 
--   [localhost:8080/challenge/5](http://localhost:8080/challenge/5)
--   [localhost:8080/challenge/6](http://localhost:8080/challenge/6)
+- [localhost:8080/challenge/5](http://localhost:8080/challenge/5)
+- [localhost:8080/challenge/6](http://localhost:8080/challenge/6)
 
 ### k8s based
 
 Want to run vanilla on your own k8s? Use the commands below:
 
 ```bash
-    kubectl apply -f k8s/secrets-config.yml
-    kubectl apply -f k8s/secrets-secret.yml
-    kubectl apply -f k8s/secret-challenge-deployment.yml
-    while [[ $(kubectl get pods -l app=secret-challenge -o 'jsonpath={..status.conditions[?(@.type=="Ready")].status}') != "True" ]]; do echo "waiting for secret-challenge" && sleep 2; done
-    kubectl port-forward \
-        $(kubectl get pod -l app=secret-challenge -o jsonpath="{.items[0].metadata.name}") \
-        8080:8080
+kubectl apply -f k8s/secrets-config.yml
+kubectl apply -f k8s/secrets-secret.yml
+kubectl apply -f k8s/secret-challenge-deployment.yml
+while [[ $(kubectl get pods -l app=secret-challenge -o 'jsonpath={..status.conditions[?(@.type=="Ready")].status}') != "True" ]]; do echo "waiting for secret-challenge" && sleep 2; done
+kubectl port-forward \
+    $(kubectl get pod -l app=secret-challenge -o jsonpath="{.items[0].metadata.name}") \
+    8080:8080
 ```
 
 now you can use the provided IP address and port to further play with the K8s variant (instead of localhost).
 
--   [localhost:8080/challenge/5](http://localhost:8080/challenge/5)
--   [localhost:8080/challenge/6](http://localhost:8080/challenge/6)
+- [localhost:8080/challenge/5](http://localhost:8080/challenge/5)
+- [localhost:8080/challenge/6](http://localhost:8080/challenge/6)
 
 ### Okteto based
 
@@ -177,13 +177,13 @@ Don't want to go over the hassle of setting up K8S yourself? visit [https://wron
 _Can be used for challenges 1-8, 12-29_
 Make sure you have the following installed:
 
--   minikube with docker (or comment out line 8 and work at your own k8s setup),
--   docker,
--   helm [Install from here](https://helm.sh/docs/intro/install/),
--   kubectl [Install from here](https://kubernetes.io/docs/tasks/tools/),
--   jq [Install from here](https://stedolan.github.io/jq/download/),
--   vault [Install from here](https://www.vaultproject.io/downloads),
--   grep, Cat, and Sed
+- minikube with docker (or comment out line 8 and work at your own k8s setup),
+- docker,
+- helm [Install from here](https://helm.sh/docs/intro/install/),
+- kubectl [Install from here](https://kubernetes.io/docs/tasks/tools/),
+- jq [Install from here](https://stedolan.github.io/jq/download/),
+- vault [Install from here](https://www.vaultproject.io/downloads),
+- grep, Cat, and Sed
 
 Run `./k8s-vault-minkube-start.sh`, when the script is done, then the challenges will wait for you at <http://localhost:8080> . This will allow you to run challenges 1-8, 12-22.
 
@@ -228,9 +228,9 @@ When you want to include your own Canarytokens for your cloud-deployment, do the
 Each challenge has a `Show hints` button and a `What's wrong?` button. These buttons help to simplify the challenges and give explanation to the reader. Though, the explanations can spoil the fun if you want to do this as a hacking exercise.
 Therefore, you can manipulate them by overriding the following settings in your env:
 
--   `hints_enabled=false` will turn off the `Show hints` button.
--   `reason_enabled=false` will turn of the `What's wrong?` explanation button.
--   `spoiling_enabled=false` will turn off the `/spoil-x` endpoint (where `x` is the number of the challenge).
+- `hints_enabled=false` will turn off the `Show hints` button.
+- `reason_enabled=false` will turn of the `What's wrong?` explanation button.
+- `spoiling_enabled=false` will turn off the `/spoil-x` endpoint (where `x` is the number of the challenge).
 
 ## Enabling Swaggerdocs and UI
 
@@ -240,43 +240,43 @@ You can enable Swagger documentation and the Swagger UI by overriding the `SPRIN
 
 Leaders:
 
--   [Ben de Haan @bendehaan](https://github.com/bendehaan)
--   [Jeroen Willemsen @commjoen](https://github.com/commjoen)
+- [Ben de Haan @bendehaan](https://github.com/bendehaan)
+- [Jeroen Willemsen @commjoen](https://github.com/commjoen)
 
 Top contributors:
 
--   [Nanne Baars @nbaars](https://github.com/nbaars)
--   [Joss Sparkes @remakingeden](https://github.com/remakingeden)
--   [Marcin Nowak @MarcinNowak-codes](https://github.com/MarcinNowak-codes)
--   [Tibor Hercz @tiborhercz](https://github.com/tiborhercz)
--   [Chris Elbring Jr. @neatzsche](https://github.com/neatzsche)
--   [Puneeth Y @puneeth072003](https://github.com/puneeth072003)
--   [Filip Chyla @fchyla](https://github.com/fchyla)
--   [Dmitry Litosh @Dlitosh](https://github.com/Dlitosh)
--   [Josh Grossman @tghosth](https://github.com/tghosth)
--   [Turjo Chowdhury @turjoc120](https://github.com/turjoc120)
--   [Spyros @northdpole](https://github.com/northdpole)
--   [Mike Woudenberg @mikewoudenberg](https://github.com/mikewoudenberg)
--   [Ruben Kruiver @RubenAtBinx](https://github.com/RubenAtBinx)
--   [Shlomo Zalman Heigh @szh](https://github.com/szh)
--   [Nicolas Humblot @nhumblot](https://github.com/nhumblot)
--   [Madhu Akula @madhuakula](https://github.com/madhuakula)
--   [Finn @f3rn0s](https://github.com/f3rn0s)
--   [Alex Bender @alex-bender](https://github.com/alex-bender)
--   [Rick M @kingthorin](https://github.com/kingthorin)
+- [Nanne Baars @nbaars](https://github.com/nbaars)
+- [Joss Sparkes @remakingeden](https://github.com/remakingeden)
+- [Marcin Nowak @MarcinNowak-codes](https://github.com/MarcinNowak-codes)
+- [Tibor Hercz @tiborhercz](https://github.com/tiborhercz)
+- [Chris Elbring Jr. @neatzsche](https://github.com/neatzsche)
+- [Puneeth Y @puneeth072003](https://github.com/puneeth072003)
+- [Filip Chyla @fchyla](https://github.com/fchyla)
+- [Dmitry Litosh @Dlitosh](https://github.com/Dlitosh)
+- [Josh Grossman @tghosth](https://github.com/tghosth)
+- [Turjo Chowdhury @turjoc120](https://github.com/turjoc120)
+- [Spyros @northdpole](https://github.com/northdpole)
+- [Mike Woudenberg @mikewoudenberg](https://github.com/mikewoudenberg)
+- [Ruben Kruiver @RubenAtBinx](https://github.com/RubenAtBinx)
+- [Shlomo Zalman Heigh @szh](https://github.com/szh)
+- [Nicolas Humblot @nhumblot](https://github.com/nhumblot)
+- [Madhu Akula @madhuakula](https://github.com/madhuakula)
+- [Finn @f3rn0s](https://github.com/f3rn0s)
+- [Alex Bender @alex-bender](https://github.com/alex-bender)
+- [Rick M @kingthorin](https://github.com/kingthorin)
 
 Testers:
 
--   [Dave van Stein @davevs](https://github.com/davevs)
--   [Marcin Nowak @MarcinNowak-codes](https://github.com/MarcinNowak-codes)
--   [Marc Chang Sing Pang @mchangsp](https://github.com/mchangsp)
+- [Dave van Stein @davevs](https://github.com/davevs)
+- [Marcin Nowak @MarcinNowak-codes](https://github.com/MarcinNowak-codes)
+- [Marc Chang Sing Pang @mchangsp](https://github.com/mchangsp)
 
 Special mentions for helping out:
 
--   [Madhu Akula @madhuakula](https://github.com/madhuakula)
--   [Björn Kimminich @bkimminich](https://github.com/bkimminich)
--   [Xiaolu Dai @saragluna](https://github.com/saragluna)
--   [Jonathan Giles @jonathanGiles](https://github.com/JonathanGiles)
+- [Madhu Akula @madhuakula](https://github.com/madhuakula)
+- [Björn Kimminich @bkimminich](https://github.com/bkimminich)
+- [Xiaolu Dai @saragluna](https://github.com/saragluna)
+- [Jonathan Giles @jonathanGiles](https://github.com/JonathanGiles)
 
 ### Sponsorships
 
@@ -298,7 +298,6 @@ We would like to thank the following parties for helping us out:
 
 [1Password](https://1password.com/) for granting us an open source license to 1Password for the secret detection testbed.
 
-
 [![AWS Open Source](images/aws-white_48x29.png)](https://aws.amazon.com/)
 
 [AWS](https://aws.amazon.com/) for granting us AWS Open Source credits which we use to test our project and the [Wrongsecrets CTF Party](https://github.com/OWASP/wrongsecrets-ctf-party) setup on AWS.
@@ -307,9 +306,9 @@ We would like to thank the following parties for helping us out:
 
 You can help us by the following methods:
 
--   Star us
--   Share this app with others
--   Of course, we can always use your help [to get more flavors](https://github.com/OWASP/wrongsecrets/issues/37) of "wrongly" configured secrets in to spread awareness! We would love to get some help with other cloud providers, like Alibaba or Tencent cloud for instance. Do you miss something else than a cloud provider? File an issue or create a PR! See [our guide on contributing for more details](CONTRIBUTING.md). Contributors will be listed in releases, in the "Special thanks & Contributors"-section, and the web-app.
+- Star us
+- Share this app with others
+- Of course, we can always use your help [to get more flavors](https://github.com/OWASP/wrongsecrets/issues/37) of "wrongly" configured secrets in to spread awareness! We would love to get some help with other cloud providers, like Alibaba or Tencent cloud for instance. Do you miss something else than a cloud provider? File an issue or create a PR! See [our guide on contributing for more details](CONTRIBUTING.md). Contributors will be listed in releases, in the "Special thanks & Contributors"-section, and the web-app.
 
 ## Use OWASP WrongSecrets as a secret detection benchmark
 
@@ -321,9 +320,9 @@ The branch will contain a Docker container generation script using which you can
 
 We have 3 ways of playing CTFs:
 
--   The quick "let's play"-approach based on our own Heroku domain [https://wrongsecrets-ctf.herokuapp.com](https://wrongsecrets-ctf.herokuapp.com) or our Okteto domain [https://wrongsecrets-ctf-commjoen.cloud.okteto.net/](https://wrongsecrets-ctf-commjoen.cloud.okteto.net/), which we documented for you here.
--   A more extended approach documented in [ctf-instructions.md](/ctf-instructions.md).
--   A fully customizable CTF setup where every player gets its own virtual instance of WrongSecrets and a virtual instance of the wrongsecrets-desktop, so they all can play hassle-free. For this you have to use [the WrongSecrets CTF Party setup](https://github.com/OWASP/wrongsecrets-ctf-party).
+- The quick "let's play"-approach based on our own Heroku domain [https://wrongsecrets-ctf.herokuapp.com](https://wrongsecrets-ctf.herokuapp.com) or our Okteto domain [https://wrongsecrets-ctf-commjoen.cloud.okteto.net/](https://wrongsecrets-ctf-commjoen.cloud.okteto.net/), which we documented for you here.
+- A more extended approach documented in [ctf-instructions.md](/ctf-instructions.md).
+- A fully customizable CTF setup where every player gets its own virtual instance of WrongSecrets and a virtual instance of the wrongsecrets-desktop, so they all can play hassle-free. For this you have to use [the WrongSecrets CTF Party setup](https://github.com/OWASP/wrongsecrets-ctf-party).
 
 ### CTFD Support
 
@@ -338,9 +337,9 @@ Initial creation of the zip file for CTFD requires you to visit [https://wrongse
 Follow the following steps:
 
 ```shell
-    npm install -g juice-shop-ctf-cli@9.1.0
-    juice-shop-ctf #choose ctfd and https://wrongsecrets-ctf.herokuapp.com (or https://wrongsecrets-ctf-commjoen.cloud.okteto.net/) as domain. No trailing slash! The key is 'TRwzkRJnHOTckssAeyJbysWgP!Qc2T', feel free to enable hints. We do not support snippets or links/urls to code or hints.
-    docker run -p 8001:8000 -it ctfd/ctfd:3.4.3
+npm install -g juice-shop-ctf-cli@9.1.0
+juice-shop-ctf #choose ctfd and https://wrongsecrets-ctf.herokuapp.com (or https://wrongsecrets-ctf-commjoen.cloud.okteto.net/) as domain. No trailing slash! The key is 'TRwzkRJnHOTckssAeyJbysWgP!Qc2T', feel free to enable hints. We do not support snippets or links/urls to code or hints.
+docker run -p 8001:8000 -it ctfd/ctfd:3.4.3
 ```
 
 Now visit the CTFD instance at [http://localhost:8001](http://localhost:8001) and setup your CTF.
@@ -362,9 +361,9 @@ For development on local machine use the `local` profile `./mvnw spring-boot:run
 If you want to test against vault without K8s: start vault locally with
 
 ```shell
- export SPRING_CLOUD_VAULT_URI='http://127.0.0.1:8200'
- export VAULT_API_ADDR='http://127.0.0.1:8200'
- vault server -dev
+export SPRING_CLOUD_VAULT_URI='http://127.0.0.1:8200'
+export VAULT_API_ADDR='http://127.0.0.1:8200'
+vault server -dev
 ```
 
 and in your next terminal, do (with the token from the previous commands):
@@ -421,8 +420,8 @@ If, after reading this section, you still have no clue on the application code: 
 To make changes made load faster we added `spring-dev-tools` to the Maven project.
 To enable this in IntelliJ automatically, make sure:
 
--   Under Compiler -> Automatically build project is enabled, and
--   Under Advanced settings -> Allow auto-make to start even if developed application is currently running.
+- Under Compiler -> Automatically build project is enabled, and
+- Under Advanced settings -> Allow auto-make to start even if developed application is currently running.
 
 You can also manually invoke: Build -> Recompile the file you just changed, this will also force reloading of the application.
 
@@ -485,8 +484,9 @@ Note: be careful with trying to deploy the `jeroenwillemsen/wrongsecrets-desktop
 
 Want to learn more? Checkout the sources below:
 
--   [Blog: 10 Pointers on Secrets Management](https://dev.to/commjoen/secure-deployment-10-pointers-on-secrets-management-187j)
--   [OWASP SAMM on Secret Management](https://owaspsamm.org/model/implementation/secure-deployment/stream-b/)
--   [The secret detection topic at Github](https://github.com/topics/secrets-detection)
--   [OWASP Secretsmanagement Cheatsheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Secrets_Management_Cheat_Sheet.md)
--   [OpenCRE on secrets management](https://www.opencre.org/cre/223-780?register=true&type=tool&tool_type=training&tags=secrets,training&description=With%20this%20app%2C%20we%20have%20packed%20various%20ways%20of%20how%20to%20not%20store%20your%20secrets.%20These%20can%20help%20you%20to%20realize%20whether%20your%20secret%20management%20is%20ok.%20The%20challenge%20is%20to%20find%20all%20the%20different%20secrets%20by%20means%20of%20various%20tools%20and%20techniques.%20Can%20you%20solve%20all%20the%2014%20challenges%3F&trk=flagship-messaging-web&messageThreadUrn=urn:li:messagingThread:2-YmRkNjRkZTMtNjRlYS00OWNiLWI2YmUtMDYwNzY3ZjI1MDcyXzAxMg==&lipi=urn:li:page:d_flagship3_feed;J58Sgd80TdanpKWFMH6z+w==)
+- [Blog: 10 Pointers on Secrets Management](https://dev.to/commjoen/secure-deployment-10-pointers-on-secrets-management-187j)
+- [OWASP SAMM on Secret Management](https://owaspsamm.org/model/implementation/secure-deployment/stream-b/)
+- [The secret detection topic at Github](https://github.com/topics/secrets-detection)
+- [OWASP Secretsmanagement Cheatsheet](https://github.com/OWASP/CheatSheetSeries/blob/master/cheatsheets/Secrets_Management_Cheat_Sheet.md)
+- [OpenCRE on secrets management](https://www.opencre.org/cre/223-780?register=true&type=tool&tool_type=training&tags=secrets,training&description=With%20this%20app%2C%20we%20have%20packed%20various%20ways%20of%20how%20to%20not%20store%20your%20secrets.%20These%20can%20help%20you%20to%20realize%20whether%20your%20secret%20management%20is%20ok.%20The%20challenge%20is%20to%20find%20all%20the%20different%20secrets%20by%20means%20of%20various%20tools%20and%20techniques.%20Can%20you%20solve%20all%20the%2014%20challenges%3F&trk=flagship-messaging-web&messageThreadUrn=urn:li:messagingThread:2-YmRkNjRkZTMtNjRlYS00OWNiLWI2YmUtMDYwNzY3ZjI1MDcyXzAxMg==&lipi=urn:li:page:d_flagship3_feed;J58Sgd80TdanpKWFMH6z+w==)
+

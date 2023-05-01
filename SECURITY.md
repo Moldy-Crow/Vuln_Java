@@ -5,8 +5,8 @@
 We only provide security updates for the latest version that has been released. See our [Release page](https://github.com/OWASP/wrongsecrets/releases)
 The "support latest only" holds both for WrongSecrets and WrongSecrets-CTF-party.
 
-| Version | Supported          |
-| ------- | ------------------ |
+| Version |     Supported      |
+|---------|--------------------|
 | latest  | :white_check_mark: |
 | <before | :x:                |
 
